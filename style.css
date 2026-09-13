@@ -1,0 +1,872 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  color: #1e293b;
+
+  background: #f8fafc;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+  width: 100%;
+
+  padding: 20px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  backdrop-filter: blur(10px);
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  box-shadow:
+    0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.logo {
+  font-size: 23px;
+
+  font-weight: 800;
+
+  color: #4a2fab;
+}
+
+
+.logo span {
+  color: #671199;
+}
+
+
+.menu {
+  display: flex;
+
+  gap: 30px;
+
+  list-style: none;
+}
+
+
+.menu a {
+  text-decoration: none;
+
+  color: #334155;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+
+.menu a:hover {
+  color: #652fab;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px 60px;
+
+  background-image: url("image/YPM-HD.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.hero-text {
+  max-width: 750px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  padding: 40px 35px;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.12);
+
+  animation: muncul 0.8s ease;
+}
+
+
+.small-title {
+  color: #462fab;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+
+.hero h1 {
+  font-size: 40px;
+
+  line-height: 1.2;
+
+  margin-bottom: 15px;
+
+  color: #1e293b;
+}
+
+
+.hero h1 span {
+  color: #2f73ab;
+}
+
+
+.description {
+  max-width: 600px;
+
+  margin: auto;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin-bottom: 22px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+  display: inline-block;
+
+  padding: 14px 30px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #2f6fab,
+    #2a1199
+  );
+
+  box-shadow:
+    0 8px 20px rgba(86, 171, 47, 0.3);
+
+  transition: 0.3s;
+}
+
+
+.btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 25px rgba(86, 171, 47, 0.4);
+}
+
+/* =========================
+   SCHOOL
+========================= */
+
+.school {
+  padding: 100px 8%;
+  background: #f8f8f8;
+}
+
+
+/* LOGO SEKOLAH */
+
+.school-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.school-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* JUDUL SEKOLAH */
+
+.school .section-title h2 {
+  margin-bottom: 15px;
+}
+
+.school .section-title span {
+  display: block;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   SCHOOL GALLERY
+========================= */
+
+.school-gallery {
+  max-width: 1100px;
+  margin: 60px auto 100px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+
+.school-image-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(141, 80, 10, 0.315);
+}
+
+
+.school-image-card img {
+  width: 100%;
+  height: 280px;
+  display: block;
+  object-fit: cover;
+}
+
+
+.school-image-content {
+  padding: 25px;
+}
+
+
+.school-image-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+
+.school-image-content p {
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   MAJOR TITLE
+========================= */
+
+.major-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+
+.major-title p {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+
+.major-title h2 {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+
+.major-title span {
+  color: #666;
+}
+
+
+/* =========================
+   MAJOR CARD
+========================= */
+
+.major-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.major-card {
+  background: linear-gradient(
+    135deg,
+    #fce2d5,
+    #f8f8f8
+  );
+
+  padding: 30px 20px;
+
+  border-radius: 32px;
+
+  border: 1px solid #e2e8f0;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.major-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #993c11;
+
+  box-shadow:
+    0 20px 30px rgba(165, 110, 7, 0.18);
+}
+
+
+/* Hover */
+.major-card:hover {
+  transform: translateY(-8px);
+}
+
+.major-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #993c11;
+
+  box-shadow:
+    0 20px 30px rgba(165, 110, 7, 0.18);
+}
+
+
+/* LOGO JURUSAN */
+
+.major-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.major-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 80px;
+}
+
+
+.major-card h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+
+.major-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .major-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .school-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .major-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+
+/* =========================
+   TEAM SECTION
+========================= */
+
+.team {
+  padding: 80px 8%;
+
+  background: #ffffff;
+}
+
+
+.section-title {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+
+.section-title p {
+  color: #151e9c;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 8px;
+}
+
+
+.section-title h2 {
+  font-size: 35px;
+
+  color: #1e293b;
+
+  margin-bottom: 10px;
+}
+
+
+.section-title span {
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   TEAM CONTAINER
+========================= */
+
+.team-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+
+  /* 3 card di baris atas */
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 25px;
+  justify-content: center;
+}
+
+
+/* =========================
+   TEAM CARD
+========================= */
+
+.card {
+  grid-column: span 2;
+
+  padding: 30px 20px;
+  text-align: center;
+
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Card ke-4 */
+.card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+
+/* Card ke-5 */
+.card:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+
+/* Hover */
+.card.show:hover {
+  transform: translateY(-8px);
+}
+
+.card.show:hover {
+  transform: translateY(-8px);
+
+  border-color: #671199;
+
+  box-shadow:
+    0 10px 30px rgba(103, 17, 153, 0.18);
+}
+
+/* =========================
+   AVATAR
+========================= */
+
+.profile {
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom: 18px;
+}
+
+
+.avatar {
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  color: white;
+
+  font-size: 35px;
+
+  font-weight: 700;
+
+  background: linear-gradient(
+    135deg,
+    #D4FC79,
+    #56AB2F,
+    #11998E
+  );
+
+  box-shadow:
+    0 8px 20px rgba(86, 171, 47, 0.25);
+}
+
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.card h3 {
+  font-size: 20px;
+
+  margin-bottom: 5px;
+
+  color: #1e293b;
+}
+
+
+.role {
+  color: #3b2fab;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+
+.bio {
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 20px;
+}
+
+
+.skills span {
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #f0fdf4;
+
+  color: #4324b1;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   PORTFOLIO BUTTON
+========================= */
+
+.portfolio-btn {
+  display: inline-block;
+
+  padding: 9px 20px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  color: #2f46ab;
+
+  border: 1px solid #2f37ab;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+
+.portfolio-btn:hover {
+  color: white;
+
+  background: #2f3bab;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  padding: 80px 8%;
+
+  background: linear-gradient(
+    135deg,
+    #c5c4ff,
+    #e4e4e4
+  );
+}
+
+
+.about-box {
+  max-width: 750px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+
+.about-box h2 {
+  font-size: 35px;
+
+  margin-bottom: 20px;
+
+  color: #1e293b;
+}
+
+
+.about-box p:last-child {
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 25px;
+
+  text-align: center;
+
+  color: white;
+
+  font-size: 13px;
+
+  background: #171665;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes muncul {
+
+  from {
+    opacity: 0;
+
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .team-container {
+    max-width: 650px;
+  }
+
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 700px) {
+
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .card:nth-child(4),
+  .card:nth-child(5) {
+    grid-column: 1;
+  }
+
+}
+
+/* =========================
+   FOTO AVATAR
+========================= */
+
+.avatar {
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   JAVASCRIPT EFFECT
+========================= */
+
+nav {
+  transition: 0.3s ease;
+}
+
+nav.scrolled {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CARD SCROLL ANIMATION */
+
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Biar hover tetap jalan */
+
+.card.show:hover {
+  transform: translateY(-8px);
+}
